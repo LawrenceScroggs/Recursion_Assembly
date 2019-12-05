@@ -3,23 +3,12 @@
 #include <stdio.h>
 #include <string.h>
 
-long Catalan(long n){
-    long sum = 0;
-    
-    if (n == 0) return 1;
-    
-    for (int i = 0; i < n; i++){
-      sum += Catalan(i) * Catalan(n -i -1);
-    
-    }
-    
-    return sum;
-  }
+long Catalan(long n);
 
 int main(int argc, char*argv[])
 {
 
-  int n = 4;
+  int n = 3;
   int new_sum;
 
   new_sum = Catalan(n);
